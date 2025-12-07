@@ -63,7 +63,7 @@ info "Running tests..."
 #monkeydo exit code is always 1 even when tests succeed!
 #we need to collect the stdout of the test to check the result
 result_file=/tmp/result.txt
-monkeydo bin/app.prg "$DEVICE_ID" -t > $result_file
+monkeydo bin/app.prg "$DEVICE_ID" -t
 
 #in any case, print the result
 info < $result_file
